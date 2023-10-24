@@ -6,6 +6,7 @@ import { useFrame } from '@react-three/fiber';
 function GLTFComponent({ modelPath }) {
   const ref = useRef();
   const { scene } = useGLTF(modelPath);
+ // ** uncomment the following line to make the model rotate
   // useFrame(() => {
   //   if (ref.current) {
   //     ref.current.rotation.y += 0.01;
